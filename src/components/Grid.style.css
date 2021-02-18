@@ -1,37 +1,25 @@
 .grid-component {
   display: grid;
   grid-gap: 1rem;
-  grid-template-rows: 150px 1fr 100px;
-  grid-template-columns: 200px 1fr;
-  grid-template-areas:
-    'header header'
-    'sidebar content'
-    'footer footer';
+  grid-template-rows: 150px;
+  grid-template-columns: repeat(3, 50px);
+  grid-auto-rows: 50px;
 }
 
 .grid-component-item {
+  background-color: salmon;
   padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .header {
-  background-color: green;
-  grid-row: header;
-  grid-column: header / span 2;
 }
 
 .sidebar {
-  background-color: blue;
-  grid-row: sidebar;
-  grid-column: sidebar;
 }
 
 .content {
-  background-color: red;
-  grid-row: content;
 }
 
 .footer {
-  background-color: yellow;
-  grid-row: footer;
-  grid-column: footer / span 2;
 }
