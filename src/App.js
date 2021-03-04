@@ -1,10 +1,10 @@
 import './App.css';
-import Grid from './components/Grid';
+import FlexboxNavbar from './components/Flexbox/FlexboxNavbar';
 
 function App() {
   return (
     <div className="App">
-      <Grid />
+      <FlexboxNavbar />
     </div>
   );
 }

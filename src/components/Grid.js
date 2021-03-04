@@ -13,8 +13,12 @@ import React from 'react';
 const Grid = () => {
   return (
     <div className="grid-component">
-      {_.range(20).map((n) => (
-        <div className="grid-component-item" key={`grid-component-item-${n}`}>
+      <div className="grid-component-item red" key="dog" />
+      {_.range(8).map((n) => (
+        <div
+          className="grid-component-item blue"
+          key={`grid-component-item-${n}`}
+        >
           {n}
         </div>
       ))}

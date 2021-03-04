@@ -1,0 +1,7 @@
+.flexbox-navbar {
+  display: flex;
+}
+
+.flexbox-navbar-search {
+  flex: 1;
+}
